@@ -33,6 +33,7 @@ En la carpeta Output se encuentran los resultados obtenidos al ejecutar el proye
   - 01_limpieza.R *Limpia los datos*
   - 02_logica.R   *Entrena el modelo*
   - 03_resultado.R *Genera predicciones*
+  - 04_graficos_exploratorios
   - make.R         *Ejecuta*
 
 ## Requisitos: 
@@ -71,7 +72,9 @@ A nivel exploratorio se observaron patrones clásicos del problema Titanic:
 Estos patrones sugieren que variables como **Sex**, **Pclass** y **Age** serán candidatas naturales para aparecer en los primeros niveles del árbol.
 
 ![Proporción de supervivencia por sexo](output/Proporción de supervivencia por sexo.png)
+
 ![Supervivencia según Clase](output/Supervivencia según Clase.png)
+
 ![Edad por condición de supervivencia](output/Edad por condición de supervivencia.png)
 
 ## 2.2 Calidad del dataset y decisiones de limpieza

@@ -61,7 +61,7 @@ El dataset contiene información registrada para cada pasajero del Titanic, incl
 Como primer paso se exploró la distribución de **Survived** para entender el nivel de desbalance de clases. La proporción de sobrevivientes no es extrema, lo cual permite entrenar un árbol de clasificación.
 
 
-![Distribución de Supervivencia](output/Distribución de Supervivencia.png)
+![ ](output/Distribucion_de_Supervivencia.png)
 
 A nivel exploratorio se observaron patrones clásicos del problema Titanic:
 
@@ -71,11 +71,12 @@ A nivel exploratorio se observaron patrones clásicos del problema Titanic:
 
 Estos patrones sugieren que variables como **Sex**, **Pclass** y **Age** serán candidatas naturales para aparecer en los primeros niveles del árbol.
 
-![](output/Proporción de supervivencia por sexo.png)
 
-![](output/Supervivencia según Clase.png)
+![ ](output/Proporcion_de_supervivencia_por_sexo.png)
 
-![](output/Edad por condición de supervivencia.png)
+![ ](output/Supervivencia_segun_Clase.png)
+
+![ ](output/Edad_por_condicion_de_supervivencia.png)
 
 ## 2.2 Calidad del dataset y decisiones de limpieza
 

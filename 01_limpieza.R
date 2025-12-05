@@ -44,3 +44,4 @@ titanic_test <- titanic_clean[shuffled_indices[(train_size + 1):nrow(titanic_cle
 # Verificar tamaños de los dos datasets
 cat("Train:", nrow(titanic_train), "filas - Con Survived\n")
 cat("Test:", nrow(titanic_test), "filas - Sin Survived\n")
+

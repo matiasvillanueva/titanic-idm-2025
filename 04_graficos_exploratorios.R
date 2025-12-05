@@ -3,7 +3,7 @@ library(ggplot2)
 library(dplyr)
 library(car)
 
-png("output/Distribución de Supervivencia.png", width = 1000, height = 600)
+png("output/Distribucion_de_Supervivencia.png", width = 1000, height = 600)
 
 ggplot(titanic_clean, aes(x = factor(Survived), fill = factor(Survived))) +
   geom_bar() +
@@ -24,7 +24,7 @@ ggplot(titanic_clean, aes(x = factor(Survived), fill = factor(Survived))) +
 
 dev.off()
 
-png("output/Proporción de supervivencia por sexo.png", width = 1000, height = 600)
+png("output/Proporcion_de_supervivencia_por_sexo.png", width = 1000, height = 600)
 ggplot(titanic_clean, aes(x = Sex, fill = Survived)) +
   geom_bar(position = "fill") +
   scale_y_continuous(labels = scales::percent) +
@@ -35,7 +35,7 @@ ggplot(titanic_clean, aes(x = Sex, fill = Survived)) +
   )
 dev.off()
 
-png("output/Edad por condición de supervivencia.png", width = 1000, height = 600)
+png("output/Edad_por_condicion_de_supervivencia.png", width = 1000, height = 600)
 ggplot(titanic_clean, aes(x = Survived, y = Age, fill = Survived)) +
   geom_boxplot() +
   labs(
@@ -45,7 +45,7 @@ ggplot(titanic_clean, aes(x = Survived, y = Age, fill = Survived)) +
   )
 dev.off()
 
-png("output/Relación entre Edad y Tarifa.png", width = 1000, height = 600)
+png("output/Relacion_entre_Edad_y_Tarifa.png", width = 1000, height = 600)
 ggplot(titanic_clean, aes(x = Age, y = Fare, color = Survived)) +
   geom_point(alpha = 0.6) +
   labs(
@@ -55,7 +55,7 @@ ggplot(titanic_clean, aes(x = Age, y = Fare, color = Survived)) +
   )
 dev.off()
 
-png("output/Supervivencia según Clase.png", width = 1000, height = 600)
+png("output/Supervivencia_segun_Clase.png", width = 1000, height = 600)
 
 ggplot(titanic_clean,
        aes(x = Pclass, fill = Survived)) +
